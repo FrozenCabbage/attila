@@ -35,7 +35,8 @@ html.menu-active,
 
 body {
 	font: 400 2em / 1.5em 'Cardo', serif;
-	color: $color-blue-30;
+	background: $color-blue-30;
+	color: $color-white;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

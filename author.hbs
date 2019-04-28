@@ -1,7 +1,7 @@
 {{!< default}}
 
 {{#author}}
-<header id="blog-header"{{#if cover_image}} class="has-cover"{{else}}{{#if @site.cover_image}} class="has-cover"{{/if}}{{/if}}>
+<header id="blog-header">
 	<div class="inner">
 		<nav id="navigation">
 			{{#if @site.logo}}
@@ -19,17 +19,10 @@
 			</span>
 			{{/if}}
 		</nav>
-		{{#if cover_image}}
-		<div class="blog-cover cover" style="background-image: url('{{img_url cover_image}}');"></div>
-		{{else}}
-		{{#if @site.cover_image}}
-		<div class="blog-cover cover" style="background-image: url('{{img_url @site.cover}}');"></div>
-		{{/if}}
-		{{/if}}
 	</div>
 </header>
 
-<section id="blog-author"{{#if cover_image}} class="has-cover"{{else}}{{#if @site.cover_image}} class="has-cover"{{/if}}{{/if}}>
+<section id="blog-author">
 	<div class="inner">
 
 		<aside class="post-author">
