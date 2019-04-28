@@ -35,8 +35,8 @@ html.menu-active,
 
 body {
 	font: 400 2em / 1.5em 'Cardo', serif;
-	background: $color-blue-30;
-	color: $color-white;
+	background: $color-froblue;
+	color: $color-frobluetext;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -51,20 +51,20 @@ textarea {
 }
 
 a {
-	color: $color-blue-15;
+	color: $color-frogreen;
 	text-decoration: none;
 	font-weight: 400;
 	transition: all ease-out 0.2s;
 }
 a:hover,
 a:focus {
-	color: $color-black;
+	color: $color-white;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Fira Sans', sans-serif;
 	text-rendering: optimizeLegibility;
-	color: $color-black;
+	color: $color-white;
 }
 
 h1 {
@@ -123,7 +123,6 @@ ol > li:before {
 	font-weight: 500;
 	line-height: 1.5em;
 	text-align: right;
-	color: $color-black;
 }
 ul > li:before {
 	margin-top: 0.25em;
@@ -148,7 +147,7 @@ hr {
     height: 1px;
     margin: 0 0 2em;
     padding: 0;
-	  background: $color-gray-90;
+	background: $color-frobluedark;
     border: 0;
 }
 
@@ -157,11 +156,10 @@ blockquote {
     padding: 1em;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-left: 0.25em solid $color-gray-90;
+    border-left: 0.25em solid $color-frobluedark;
     font-style: italic;
     font-weight: 400;
-    color: $color-blue-30;
-    background: $color-gray-98;
+    background: $color-frobluebg;
 }
 blockquote p {
 	margin: 0 0 1em;
@@ -174,16 +172,16 @@ blockquote p:last-child {
 }
 em, i {
 	font-style: italic;
-	color: $color-blue-15;
+	// color: $color-blue-15;
 }
 strong, b {
 	font-weight: 700;
-	color: $color-blue-15;
+	// color: $color-blue-15;
 }
 
 small {
     font-size: 0.9em;
-    color: $color-blue-30;
+    // color: $color-blue-30;
 }
 
 
@@ -224,8 +222,8 @@ code, tt {
 	font-family: monospace, sans-serif;
 	font-size: 0.75em;
 	white-space: pre;
-	background: $color-gray-98;
-  border: 1px solid $color-gray-90;
+	background: $color-frobluebg;
+  border: 1px solid $color-frobluedark;
 	top: -2px;
 }
 
@@ -236,8 +234,8 @@ pre {
 	overflow: hidden;
 	font-family: monospace, sans-serif;
 	white-space: pre;
-	background: $color-gray-98;
-  border: 1px solid $color-gray-90;
+	background: $color-frobluebg;
+  border: 1px solid $color-frobluedark;
 	box-sizing: border-box;
 }
 pre .lines {
@@ -247,17 +245,17 @@ pre .lines {
 	left: 0;
 	top: 0;
 	padding: 1.334em 0;
-	border-right: 1px solid $color-gray-90;
+	border-right: 1px solid $color-frobluedark;
 	font-size: 0.75em;
 	line-height: 2em;
 	text-align: right;
 	box-sizing: border-box;
-	background: rgba(255,255,255,0.5);
+	background: $color-frobluedark;
 }
 pre .lines .line {
 	display: block;
 	padding-right: 0.334em;
-    color: $color-blue-30;
+    color: $color-white;
 }
 
 pre code, pre tt {
@@ -504,7 +502,7 @@ img[src$="#full"] {
 	bottom: 0;
 	margin-left: -16em;
 	content: '';
-	background: $color-gray-90;
+	background: $color-frobluedark;
 }
 #blog-header.has-cover {
 	padding: 9em 0 10em;
@@ -938,7 +936,7 @@ img[src$="#full"] {
 	bottom: 0;
 	margin-left: -16em;
 	content: '';
-	background: $color-gray-90;
+	background: $color-frobluedark;
 }
 .container .post.featured .post-title:after {
 	position: absolute;
@@ -1021,7 +1019,7 @@ img[src$="#full"] {
 	line-height: 1em;
 	font-weight: 700;
 	text-indent: -1px;
-	color: $color-black;
+	color: $color-white;
 }
 .has-cover .post-title {
 	color: $color-white;
@@ -1061,6 +1059,11 @@ img[src$="#full"] {
 }
 .post-excerpt p {
 	margin: 0.5em 0 0;
+
+}
+.post-excerpt p:nth-last-child(2)::after {
+	content: "...";
+	
 }
 .post-content {
   padding: 2em 0;

@@ -156,4 +156,5 @@ jQuery(function($) {
 			$(this).parent().addClass('activated');
 		});
 	}
+
 });
