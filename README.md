@@ -1,13 +1,6 @@
-# Attila
+# Attila (Frozen Cabbage version)
 
-A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
-
-## Demo
-
-* [Blog](http://attila.zutrinken.com/)
-* [Post](http://attila.zutrinken.com/demo/)
-* [Tag Archive](http://attila.zutrinken.com/tag/general/)
-* [Author Archive](http://attila.zutrinken.com/author/zutrinken/)
+This is a respin of zutrinken's [Attila](https://github.com/zutrinken/attila) theme for [Ghost](http://github.com/tryghost/ghost/). See it in action on our [blog](https://frozencabbage.com).
 
 ## Screenshots
 
@@ -21,23 +14,6 @@ A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/
 </td>
 </tr>
 </table>
-
-## Features
-
-* Responsive layout
-* Navigation support
-* Paralax cover images for posts, author archives and blog
-* Author informations for posts and author archives
-* Featured posts
-* Reading progress for posts
-* Automatic code syntax highlight and line numbers
-* Disqus support
-* Subscribers support
-* Sharing buttons
-
-## Setup
-
-To enable [Disqus](https://disqus.com/) comments go to your blogs code injection settings and add `<script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>` to your blog header.
 
 ## Development
 
@@ -57,6 +33,3 @@ The zip Grunt task packages the theme files into `dist/<theme-name>.zip`, which 
 
 	grunt zip
 
-## Copyright & License
-
-Copyright (C) 2015-2019 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
